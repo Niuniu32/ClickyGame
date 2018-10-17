@@ -1,0 +1,13 @@
+.navbar {
+    background-color:purple;
+    position:fixed;
+    width: 100%;  
+};
+li{
+    display:inline;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
