@@ -1,15 +1,10 @@
 import React from "react";
+import { Image } from "react-bootstrap"
 import "./Cards.css";
 
-const cards = props => (
-    <div className="card container">
-        <div className="img-div">
-            <img alt={props.name} src={props.image} />
-        </div>
-        <div>
-            Hello Game
-        </div>
-
-    </div>
-);
+const cards = props => {
+    return (
+        <Image onClick={()=>props.handleClicked(props.clicked,props.id)} src={props.image} alt="cards" className="border border-dark" responsive />
+    )
+};
 export default cards;
